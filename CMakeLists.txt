@@ -1,8 +1,12 @@
 cmake_minimum_required(VERSION 3.10)
-project(mobile_robot_app)
+project(mobile_robot_system)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(mobile_robot_app main.cpp mobile_robot.cpp)
+add_library(mobile_robot_lib mobile_robot.cpp)
+
+add_executable(mobile_robot_app main.cpp)
+
+target_link_libraries(mobile_robot_app PRIVATE mobile_robot_lib)
 
