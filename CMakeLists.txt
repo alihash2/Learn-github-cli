@@ -4,9 +4,11 @@ project(mobile_robot_system)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_library(mobile_robot_lib mobile_robot.cpp)
+include_directories(include)
 
-add_executable(mobile_robot_app main.cpp)
+add_library(mobile_robot_lib src/mobile_robot.cpp)
+
+add_executable(mobile_robot_app apps/main.cpp)
 
 target_link_libraries(mobile_robot_app PRIVATE mobile_robot_lib)
 
