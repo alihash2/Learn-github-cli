@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include_directories(include)
 
-add_library(mobile_robot_lib src/mobile_robot.cpp)
+add_library(mobile_robot_lib src/mobile_robot.cpp src/wheel_data.cpp src/odometry.cpp src/lidar_data.cpp)
 
 add_executable(mobile_robot_app apps/main.cpp)
 
