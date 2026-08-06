@@ -2,21 +2,10 @@
 #include <string>
 #include <vector>
 #include <random>
+#include "wheel_data.hpp"
+#include "odometry.hpp"
+#include "lidar_data.hpp"
 
-struct WheelData{
-    float left_speed;
-    float right_speed;
-};
-
-struct OdometryData {
-    float x;
-    float y;
-    float z;
-};
-
-struct LidarData {
-    std::vector<float> ranges;
-};
 
 class MobileRobot {
     private:

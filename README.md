@@ -5,11 +5,12 @@ Directory Structure:
 * `src/` - Implementation of robot logic and sensor simulation.
 * `apps/` - Example driver application (`main.cpp`).
 
+Instructions:
+1. Download the repo or git clone on your terminal using the link given on the repo page.
+2. Open the root directory or type "cd LearnGit"
+3. On your terminal, type these commands from the root directory.
 
-Build:
-```bash:
 	mkdir -p build && cd build
 	cmake ..
 	make
-Run:
 	./mobile_robot_app
